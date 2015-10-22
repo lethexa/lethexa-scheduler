@@ -18,15 +18,6 @@ describe('sched', function () {
         });
     });
 
-
-    describe('#createEvent()', function () {
-        it('should return a valid event-object', function () {
-
-            assert.notEqual(undefined, sched.createEvent());
-        });
-    });
-
-
     describe('#schedule()', function () {
         it('should throw error when no further events in queue', function () {
             var scheduler = sched.createScheduler();
