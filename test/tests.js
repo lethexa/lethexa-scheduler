@@ -50,6 +50,25 @@ describe('sched', function () {
         });
     });
 
+    describe('#schedule()', function () {
+        it('should reorder events by time', function () {
+            var scheduler = sched.createScheduler();
+            var eventName;
+
+            scheduler.schedule(2.0, {}, function(param) {
+              eventName = 'event2';
+            });
+            scheduler.schedule(1.0, {}, function(param) {
+              eventName = 'event1'
+            });
+            scheduler.tickNext();
+            assert.equal('event1', eventName);
+
+            scheduler.tickNext();
+            assert.equal('event2', eventName);
+        });
+    });
+
 });
 
 
