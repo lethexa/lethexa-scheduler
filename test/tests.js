@@ -69,6 +69,18 @@ describe('sched', function () {
         });
     });
 
+    describe('#timeTillNext()', function () {
+        it('should return the time till next event', function () {
+            var scheduler = sched.createScheduler();
+
+            scheduler.schedule(2.0, {}, function(param) {
+              eventName = 'event2';
+            });
+            var dt = scheduler.timeTillNext();
+            assert.equal(2.0, dt);
+        });
+    });
+
 });
 
 
