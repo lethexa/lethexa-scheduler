@@ -10,3 +10,14 @@ describe('Array', function () {
     });
 });
 
+describe('sched', function () {
+    describe('#createScheduler()', function () {
+        it('should return a valid scheduler-object', function () {
+
+            assert.notEqual(undefined, sched.createScheduler());
+        });
+    });
+});
+
+
+
