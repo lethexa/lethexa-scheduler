@@ -17,6 +17,14 @@ describe('sched', function () {
             assert.notEqual(undefined, sched.createScheduler());
         });
     });
+
+
+    describe('#createEvent()', function () {
+        it('should return a valid event-object', function () {
+
+            assert.notEqual(undefined, sched.createEvent());
+        });
+    });
 });
 
 
