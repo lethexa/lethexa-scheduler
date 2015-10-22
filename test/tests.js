@@ -72,6 +72,23 @@ describe('sched', function () {
         });
     });
 
+    describe('#hasNext()', function () {
+        it('should return true when queue not empty', function () {
+            var scheduler = sched.createScheduler();
+
+            scheduler.schedule(2.0, {}, function(param) {});
+            assert.equal(true, scheduler.hasNext());
+        });
+    });
+
+    describe('#hasNext()', function () {
+        it('should return false when queue empty', function () {
+            var scheduler = sched.createScheduler();
+
+            assert.equal(false, scheduler.hasNext());
+        });
+    });
+
 });
 
 
