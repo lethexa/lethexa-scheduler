@@ -4,6 +4,6 @@
  * Scheduler for simulation-events
  * @module sched
  */
-module.exports = require('lib/sched');
+module.exports = require('./lib/sched');
 
 
