@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git remote add origin git@github.com:lethexa/lethexa-scheduler.git"
+    "url": "git@github.com:lethexa/lethexa-scheduler.git"
   },
   "keywords": [
     "Scheduler",
