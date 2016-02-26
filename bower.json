@@ -24,6 +24,7 @@
     "Gruntfile.js",
     "jenkins-grunt.sh",
     "publishTag.sh",
+    "package.json",
     "lib",
     "test",
     "tests"
