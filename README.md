@@ -1,4 +1,14 @@
-A message-scheduling-library
+lethexa-scheduler
+-----------------
+
+A message-scheduling-library for scheduling timed events.
+
+Installation
+------------
+
+	npm install
+	grunt
+
 
 Usage
 -----
@@ -23,17 +33,8 @@ Usage
 	// ... wait dt-seconds ....
 	scheduler.tickNext();
 
-
-Contributors
-------------
-
-* lethexa
-
-
 License
 -------
-Copyright (c) 2015 Tim Leerhoff <tleerhof@web.de>
 
-Licensed under MIT
-
+This library is published under MIT license.
 
